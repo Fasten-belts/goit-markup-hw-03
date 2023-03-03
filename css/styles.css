@@ -1,0 +1,175 @@
+:root {
+  --main-color-background: #ffffff;
+  --second-color-background: #2e2f42;
+  --third-color-background: #f4f4fd;
+  --main-color-headline: #2e2f42;
+  --second-color-headline: #ffffff;
+  --main-color-paragraph: #434455;
+  --second-color-paraagraph: #e7e9fc;
+  --button-color: #4d5ae5;
+  --hover-color: #404bbf;
+}
+/* clear styles */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+p {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+/* Body */
+body {
+  background-color: var(--main-color-background);
+  color: var(--main-color-paragraph);
+  font-family: 'roboto', sans-serif;
+}
+/* Header */
+.page-header .logo,
+.page-header .accent,
+.page-footer .accent {
+  color: var(--main-color-headline);
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  text-transform: uppercase;
+}
+.page-header .accent,
+.page-footer .accent {
+  color: var(--button-color);
+}
+.site-nav .page {
+  color: var(--main-color-headline);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* .site-nav .page-main {
+}
+.site-nav .page-second {
+}
+.site-nav .page-third {
+} */
+.adress-nav .link {
+  color: var(--main-color-paragraph);
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* .adress-nav .link-email {
+}
+.adress-nav .link-phone {
+} */
+.site-nav .page:hover,
+.site-nav .page:focus,
+.site-nav .page:active,
+.adress-nav .link:hover,
+.adress-nav .link:focus,
+.adress-nav .link:active {
+  color: var(--hover-color);
+}
+/* MAIN */
+/* Hero */
+.hero {
+  background-color: var(--second-color-background);
+}
+.hero .hero-headline {
+  color: var(--second-color-headline);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+}
+/* button */
+.button {
+  font-family: inherit;
+  background-color: var(--button-color);
+  color: var(--second-color-headline);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--hover-color);
+}
+/* Portfolio */
+.button-portfolio {
+  font-family: inherit;
+  background-color: var(--second-color-paraagraph);
+  color: var(--button-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: var(--second-color-headline);
+  background-color: var(--button-color);
+}
+.project{
+  color: var(--main-color-paragraph)
+}
+/* 3 Section */
+.section {
+  background-color: var(--main-color-background);
+  color: var(--main-color-paragraph);
+}
+.second-section {
+  background-color: var(--third-color-background);
+}
+.person {
+  background-color: var(--main-color-background);
+}
+.section-title {
+  color: transparent;
+}
+.section-header {
+  color: var(--main-color-headline);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+}
+.title {
+  color: var(--main-color-headline);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.section-title-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* Footer */
+.page-footer {
+  background-color: var(--second-color-background);
+}
+.page-footer .logo {
+  color: var(--third-color-background);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+}
+.page-footer .text {
+  color: var(--second-color-paraagraph);
+  font-size: 16px;
+  line-height: 1.5;
+}
