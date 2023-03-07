@@ -264,10 +264,22 @@ body {
 
 .person {
   background-color: var(--main-color-background);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .section-title {
-  color: transparent;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .section-header {
@@ -299,12 +311,16 @@ body {
   letter-spacing: 0.02em;
 }
 
-.section-title-text {
+.person .section-title-text,
+.project .section-title-text {
   padding-bottom: 32px;
 
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
+}
+.section-title-text {
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* --------- Card Set -------- */
