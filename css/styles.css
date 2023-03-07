@@ -43,7 +43,6 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 0;
   margin: 0;
 }
 img {
@@ -60,7 +59,6 @@ body {
 }
 
 .container {
-  /* outline: solid red; */
   width: 1128px;
   padding-left: 15px;
   padding-right: 15px;
@@ -68,10 +66,6 @@ body {
 }
 
 /* -------- Navigation set ------ */
-.site-nav li {
-  outline: 2px solid red;
-}
-
 .site-nav {
   display: flex;
   margin-left: 76px;
@@ -98,7 +92,7 @@ body {
 }
 .address-nav {
   display: flex;
-  margin-left: 332px;
+  margin-left: auto;
 }
 
 /*----------------- Header -----------------*/
@@ -156,15 +150,17 @@ body {
 .hero {
   text-align: center;
   margin-bottom: 120px;
+  padding-top: 188px;
 
   background-color: var(--second-color-background);
 }
 
 .hero .hero-headline {
-  display: inline-block;
-  margin-top: 188px;
   margin-bottom: 48px;
+  text-align: center;
   width: 496px;
+  margin-left: auto;
+  margin-right: auto;
 
   color: var(--second-color-headline);
   font-style: normal;
@@ -176,8 +172,6 @@ body {
 
 /*----------- button -----------*/
 .button {
-  /* align-items: center; */
-  letter-spacing: 0.04em;
   margin-bottom: 188px;
 
   font-family: inherit;
@@ -191,6 +185,7 @@ body {
   border-radius: 4px;
   padding: 16px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.04em;
 }
 
 .button:hover,
@@ -222,6 +217,9 @@ body {
 
 .project {
   color: var(--main-color-paragraph);
+  padding-left: 16px;
+  /* margin-left: 16px; */
+  border: 1px solid #e7e9fc;
 }
 
 /* ------- Button Set -------- */
@@ -310,7 +308,6 @@ body {
 /* --------- Card Set -------- */
 
 .card-set {
-  /* outline: 2px solid red; */
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-interval));
@@ -347,6 +344,7 @@ body {
 .page-footer .logo {
   display: flex;
   align-items: center;
+  margin-bottom: 17.5px;
 
   color: var(--third-color-background);
   font-family: 'Raleway';
@@ -363,4 +361,5 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
 }
