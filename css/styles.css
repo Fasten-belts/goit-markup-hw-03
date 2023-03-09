@@ -172,6 +172,7 @@ body {
 /*----------- button -----------*/
 .button {
   font-family: inherit;
+  cursor: pointer;
   background-color: var(--button-color);
   color: var(--second-color-headline);
   cursor: pointer;
@@ -180,6 +181,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   border-radius: 4px;
+  border: none;
   padding: 16px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   letter-spacing: 0.04em;
@@ -193,9 +195,10 @@ body {
 /*------------- Portfolio ------------*/
 .button-portfolio {
   padding: 12px 24px;
+  cursor: pointer;
 
   font-family: inherit;
-  background-color: var(--second-color-paraagraph);
+  background-color: #f4f4fd;
   color: var(--button-color);
   font-weight: 500;
   font-size: 16px;
@@ -216,6 +219,7 @@ body {
 .project {
   color: var(--main-color-paragraph);
   padding-left: 16px;
+  padding-right: 16px;
   padding-top: 24px;
   padding-bottom: 24px;
   border-right: 1px solid #e7e9fc;
@@ -253,7 +257,7 @@ body {
 }
 
 .person {
-  padding: 24px 0;
+  padding: 24px 5px;
   background-color: var(--main-color-background);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -318,7 +322,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-interval));
-  margin-top: calc(-1 * var(--card-interval));
 }
 
 .card-set > .box-item {
@@ -330,6 +333,10 @@ body {
   margin-left: var(--card-interval);
   flex-basis: calc(100% / 3 - var(--card-interval));
   margin-bottom: 24px;
+}
+
+.card-set > .box-image:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .card-set > .benefits-list {
