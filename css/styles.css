@@ -48,6 +48,7 @@ h6 {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 /*---------------- Body -----------------*/
@@ -69,19 +70,21 @@ body {
 .site-nav {
   display: flex;
   margin-left: 76px;
+  gap: 24px;
 }
 
-.site-nav .page-navigation + .page-navigation {
+/* .site-nav .page-navigation + .page-navigation {
   margin-left: 24px;
-}
+} */
 
 .contact-nav {
   display: flex;
+  gap: 40px;
 }
 
-.contact-nav .contact-link + .contact-link {
+/* .contact-nav .contact-link + .contact-link {
   margin-left: 40px;
-}
+} */
 .navigation {
   display: flex;
   align-items: center;
@@ -161,7 +164,7 @@ body {
 .hero .hero-headline {
   margin-bottom: 48px;
   text-align: center;
-  width: 496px;
+  max-width: 496px;
   margin-left: auto;
   margin-right: auto;
 
@@ -176,7 +179,6 @@ body {
 /*----------- button -----------*/
 .button {
   font-family: inherit;
-  cursor: pointer;
   background-color: var(--button-color);
   color: var(--second-color-headline);
   cursor: pointer;
@@ -374,5 +376,5 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  width: 264px;
+  max-width: 264px;
 }
